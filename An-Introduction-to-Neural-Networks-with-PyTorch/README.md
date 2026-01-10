@@ -43,13 +43,13 @@ If the values within a tensor does not matter, then the `torch.empty()` method c
 ```python
 tensor = torch.empty((2, 3, 2), dtype=torch.int32)
 print(tensor)
-# Prints: tensor([[[1275134256,       1000],
-#                  [         0,          0],
-#                  [         0,          0]],
-#                  
-#                  [[         0,          0],
-#                  [         0,          0],
-#                  [         0,          0]]], dtype=torch.int32)
+# Print: tensor([[[1275134256,       1000],
+#                 [         0,          0],
+#                 [         0,          0]],
+#                 
+#                 [[         0,          0],
+#                 [         0,          0],
+#                 [         0,          0]]], dtype=torch.int32)
 ```
 
 If the values within a tensor does matter, then use one of the following methods to create a tensor:
@@ -68,25 +68,25 @@ print(tensor_zeros)
 print(tensor_ones)
 print(tensor_specific)
 print(tensor_random)
-# Prints: tensor([[0., 0.],
-#                 [0., 0.],
-#                 [0., 0.],
-#                 [0., 0.],
-#                 [0., 0.]], dtype=torch.float16)
-#         tensor([[1, 1, 1, 1],
-#                 [1, 1, 1, 1],
-#                 [1, 1, 1, 1]], dtype=torch.uint8)
-#         tensor([[ 1.0000,  4.0000,  2.8300],
-#                 [ 1.0020,  0.4000, -3.0000]])
-#         tensor([[0.1074+0.9023j, 0.2461+0.7334j, 0.0439+0.7412j, 0.5557+0.0864j,
-#                  0.6460+0.8350j, 0.2173+0.9922j, 0.9722+0.8062j],
-#                 [0.2715+0.5024j, 0.0850+0.7739j, 0.5542+0.7275j, 0.6240+0.1890j,
-#                  0.0400+0.9819j, 0.8984+0.0918j, 0.7617+0.6108j],
-#                 [0.5273+0.2871j, 0.5215+0.0137j, 0.8896+0.8486j, 0.1582+0.3774j,
-#                  0.3472+0.2290j, 0.5884+0.2231j, 0.0547+0.7910j],
-#                 [0.7129+0.6191j, 0.6772+0.2993j, 0.9653+0.9897j, 0.9082+0.3765j,
-#                  0.4531+0.9468j, 0.4512+0.1489j, 0.6650+0.5752j]],
-#                dtype=torch.complex32)
+# Print: tensor([[0., 0.],
+#                [0., 0.],
+#                [0., 0.],
+#                [0., 0.],
+#                [0., 0.]], dtype=torch.float16)
+#        tensor([[1, 1, 1, 1],
+#                [1, 1, 1, 1],
+#                [1, 1, 1, 1]], dtype=torch.uint8)
+#        tensor([[ 1.0000,  4.0000,  2.8300],
+#                [ 1.0020,  0.4000, -3.0000]])
+#        tensor([[0.1074+0.9023j, 0.2461+0.7334j, 0.0439+0.7412j, 0.5557+0.0864j,
+#                 0.6460+0.8350j, 0.2173+0.9922j, 0.9722+0.8062j],
+#                [0.2715+0.5024j, 0.0850+0.7739j, 0.5542+0.7275j, 0.6240+0.1890j,
+#                 0.0400+0.9819j, 0.8984+0.0918j, 0.7617+0.6108j],
+#                [0.5273+0.2871j, 0.5215+0.0137j, 0.8896+0.8486j, 0.1582+0.3774j,
+#                 0.3472+0.2290j, 0.5884+0.2231j, 0.0547+0.7910j],
+#                [0.7129+0.6191j, 0.6772+0.2993j, 0.9653+0.9897j, 0.9082+0.3765j,
+#                 0.4531+0.9468j, 0.4512+0.1489j, 0.6650+0.5752j]],
+#               dtype=torch.complex32)
 ```
 
 ### Altering Datatypes
@@ -125,22 +125,22 @@ print(tensor_matrix.shape)
 print(tensor_matrix)
 print(tensor_vector.shape)
 print(tensor_vector)
-# Prints: torch.Size([2, 3, 2])
-#         tensor([[[0.4219, 0.0159],
-#                  [0.3079, 0.0944],
-#                  [0.2078, 0.1408]],
-#
-#                 [[0.1276, 0.7745],
-#                  [0.1160, 0.1393],
-#                  [0.4633, 0.2628]]])
-#         torch.Size([4, 3])
-#         tensor([[0.4219, 0.0159, 0.3079],
-#                 [0.0944, 0.2078, 0.1408],
-#                 [0.1276, 0.7745, 0.1160],
-#                 [0.1393, 0.4633, 0.2628]])
-#         torch.Size([12])
-#         tensor([0.4219, 0.0159, 0.3079, 0.0944, 0.2078, 0.1408, 0.1276, 0.7745, 0.1160,
-#                 0.1393, 0.4633, 0.2628])
+# Print: torch.Size([2, 3, 2])
+#        tensor([[[0.4219, 0.0159],
+#                 [0.3079, 0.0944],
+#                 [0.2078, 0.1408]],
+#                 
+#                [[0.1276, 0.7745],
+#                 [0.1160, 0.1393],
+#                 [0.4633, 0.2628]]])
+#        torch.Size([4, 3])
+#        tensor([[0.4219, 0.0159, 0.3079],
+#                [0.0944, 0.2078, 0.1408],
+#                [0.1276, 0.7745, 0.1160],
+#                [0.1393, 0.4633, 0.2628]])
+#        torch.Size([12])
+#        tensor([0.4219, 0.0159, 0.3079, 0.0944, 0.2078, 0.1408, 0.1276, 0.7745, 0.1160,
+#                0.1393, 0.4633, 0.2628])
 ```
 
 This can also be done by specifically adding or removing dimensions of size one via the following methods:
@@ -158,15 +158,15 @@ print(tensor_unsqueezed_0.shape)
 print(tensor_unsqueezed_0)
 print(tensor_unsqueezed_1.shape)
 print(tensor_unsqueezed_1)
-# Prints: torch.Size([4])
-#         tensor([1, 2, 3, 4])
-#         torch.Size([1, 4])
-#         tensor([[1, 2, 3, 4]])
-#         torch.Size([4, 1])
-#         tensor([[1],
-#                 [2],
-#                 [3],
-#                 [4]])
+# Print: torch.Size([4])
+#        tensor([1, 2, 3, 4])
+#        torch.Size([1, 4])
+#        tensor([[1, 2, 3, 4]])
+#        torch.Size([4, 1])
+#        tensor([[1],
+#                [2],
+#                [3],
+#                [4]])
 ```
 
 ```python
@@ -183,20 +183,20 @@ print(tensor_squeezed_2.shape)
 print(tensor_squeezed_2)
 print(tensor_squeezed.shape)
 print(tensor_squeezed)
-# Prints: torch.Size([1, 4, 1])
-#         tensor([[[1],
-#                  [2],
-#                  [3],
-#                  [4]]])
-#         torch.Size([4, 1])
-#         tensor([[1],
+# Print: torch.Size([1, 4, 1])
+#        tensor([[[1],
 #                 [2],
 #                 [3],
-#                 [4]])
-#         torch.Size([1, 4])
-#         tensor([[1, 2, 3, 4]])
-#         torch.Size([4])
-#         tensor([1, 2, 3, 4])
+#                 [4]]])
+#        torch.Size([4, 1])
+#        tensor([[1],
+#                [2],
+#                [3],
+#                [4]])
+#        torch.Size([1, 4])
+#        tensor([[1, 2, 3, 4]])
+#        torch.Size([4])
+#        tensor([1, 2, 3, 4])
 ```
 
 ## Neural Networks
@@ -289,13 +289,13 @@ model = torch.nn.Sequential(
     torch.nn.Linear(in_features=2, out_features=1),
 )
 print(model)
-# Prints: Sequential(
-#           (0): Linear(in_features=3, out_features=4, bias=True)
-#           (1): ReLU()
-#           (2): Linear(in_features=4, out_features=2, bias=True)
-#           (3): Sigmoid()
-#           (4): Linear(in_features=2, out_features=1, bias=True)
-#         )
+# Print: Sequential(
+#          (0): Linear(in_features=3, out_features=4, bias=True)
+#          (1): ReLU()
+#          (2): Linear(in_features=4, out_features=2, bias=True)
+#          (3): Sigmoid()
+#          (4): Linear(in_features=2, out_features=1, bias=True)
+#        )
 ```
 
 Then, running feedforward through the model:
@@ -307,8 +307,8 @@ torch.manual_seed(101)
 X = torch.tensor([[1, 4, 2.83], [1.002, 0.4, -3]])
 feedforward_result = model(X)
 print(feedforward_result)
-# Prints: tensor([[-1.0445],
-#                 [-0.9859]], grad_fn=<AddmmBackward0>)
+# Print: tensor([[-1.0445],
+#                [-0.9859]], grad_fn=<AddmmBackward0>)
 ```
 
 Interpreting this:
@@ -345,13 +345,13 @@ class CustomNeuralNetwork(torch.nn.Module):
 
 model_custom = CustomNeuralNetwork()
 print(model_custom)
-# Prints: CustomNeuralNetwork(
-#           (hidden_layer1): Linear(in_features=3, out_features=4, bias=True)
-#           (hidden_layer2): Linear(in_features=4, out_features=2, bias=True)
-#           (output_layer): Linear(in_features=2, out_features=1, bias=True)
-#           (relu): ReLU()
-#           (sigmoid): Sigmoid()
-#         )
+# Print: CustomNeuralNetwork(
+#          (hidden_layer1): Linear(in_features=3, out_features=4, bias=True)
+#          (hidden_layer2): Linear(in_features=4, out_features=2, bias=True)
+#          (output_layer): Linear(in_features=2, out_features=1, bias=True)
+#          (relu): ReLU()
+#          (sigmoid): Sigmoid()
+#        )
 ```
 
 Then, running feedforward through the model gives [the exact same result as the previous sequential neural network example](#sequential_neural_network_example_result):
@@ -362,6 +362,6 @@ torch.manual_seed(101)
 X = torch.tensor([[1, 4, 2.83], [1.002, 0.4, -3]])
 feedforward_result_custom = model_custom(X)
 print(feedforward_result_custom)
-# Prints: tensor([[-1.0445],
-#                 [-0.9859]], grad_fn=<AddmmBackward0>)
+# Print: tensor([[-1.0445],
+#                [-0.9859]], grad_fn=<AddmmBackward0>)
 ```
